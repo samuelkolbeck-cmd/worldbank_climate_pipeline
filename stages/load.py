@@ -57,6 +57,7 @@ def load(
             'ccr_score':              row.ccr_score,
             'ranking_position':       row.ranking_position,
         })
+    db.conn.commit()
 
     meta = submission.metadata
     db.log_submission({

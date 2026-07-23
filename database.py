@@ -105,8 +105,8 @@ class Database:
             indicator.get('data_type'),
             indicator.get('unit'),
             indicator.get('source_type'),
-            indicator.get('valid_range', [None, None])[0],
-            indicator.get('valid_range', [None, None])[1],
+            (indicator.get('valid_range') or [None, None])[0],
+            (indicator.get('valid_range') or [None, None])[1],
         ))
         self.conn.commit()
 
@@ -146,7 +146,7 @@ class Database:
             row.get('ccr_score'),
             row.get('ranking_position'),
         ))
-        self.conn.commit()
+        # Removed individual commit() for performance - caller should commit batches
 
     def get_latest_round(self, country_code: str, indicator_id: str,
                          year: int, region_id=None, nace_node_id=None) -> str:

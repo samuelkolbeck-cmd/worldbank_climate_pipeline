@@ -82,4 +82,4 @@ def _safe_float(value) -> float:
     try:
         return float(value)
     except (TypeError, ValueError):
-        return 0.0
+        raise ValueError(f"Invalid numeric value: {value}")

@@ -77,10 +77,10 @@ def enrich(processed_rows: List[ProcessedDataRow]) -> List[ProcessedDataRow]:
 
         row.physical_risk = _physical(cc, year, data)
         row.transition_risk = _normalise(
-            transition_raw.get((cc, year)), transition_raw
+            transition_raw.get((cc, year)), year, transition_raw
         )
         row.financial_vulnerability = _normalise(
-            financial_raw.get((cc, year)), financial_raw
+            financial_raw.get((cc, year)), year, financial_raw
         )
 
         if (row.physical_risk is not None
@@ -136,11 +136,12 @@ def _compute_weighted_raws(
 
 def _normalise(
     raw: Optional[float],
+    year: int,
     all_raws: Dict[Tuple, float],
 ) -> Optional[float]:
     if raw is None:
         return None
-    vals = list(all_raws.values())
+    vals = [v for k, v in all_raws.items() if k[1] == year]
     if not vals:
         return None
     lo, hi = min(vals), max(vals)
