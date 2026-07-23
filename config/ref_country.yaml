@@ -1,0 +1,73 @@
+version: "1.0"
+last_updated: "2026-07-21"
+status: "PRODUCTION - FinSAC countries"
+total_countries: 17
+countries:
+  ALB:
+    name: 'Albania'
+    region_id: 'Western Balkans'
+    coverage_status: 'active'
+  ARM:
+    name: 'Armenia'
+    region_id: 'Caucasus'
+    coverage_status: 'active'
+  AZE:
+    name: 'Azerbaijan'
+    region_id: 'Caucasus'
+    coverage_status: 'active'
+  BGR:
+    name: 'Bulgaria'
+    region_id: 'EU Balkans/SEE'
+    coverage_status: 'active'
+  BIH:
+    name: 'Bosnia and Herzegovina'
+    region_id: 'Western Balkans'
+    coverage_status: 'active'
+  BLR:
+    name: 'Belarus'
+    region_id: 'Eastern Europe'
+    coverage_status: 'active'
+  GEO:
+    name: 'Georgia'
+    region_id: 'Caucasus'
+    coverage_status: 'active'
+  HRV:
+    name: 'Croatia'
+    region_id: 'EU Balkans/SEE'
+    coverage_status: 'active'
+  MDA:
+    name: 'Moldova'
+    region_id: 'Eastern Europe'
+    coverage_status: 'active'
+  MKD:
+    name: 'North Macedonia'
+    region_id: 'Western Balkans'
+    coverage_status: 'active'
+  MNE:
+    name: 'Montenegro'
+    region_id: 'Western Balkans'
+    coverage_status: 'active'
+  POL:
+    name: 'Poland'
+    region_id: 'Central Europe'
+    coverage_status: 'active'
+  ROU:
+    name: 'Romania'
+    region_id: 'EU Balkans/SEE'
+    coverage_status: 'active'
+  SRB:
+    name: 'Serbia'
+    region_id: 'Western Balkans'
+    coverage_status: 'active'
+  UKR:
+    name: 'Ukraine'
+    region_id: 'Eastern Europe'
+    coverage_status: 'active'
+  UZB:
+    name: 'Uzbekistan'
+    region_id: 'Central Asia'
+    coverage_status: 'active'
+  XKX:
+    name: 'Kosovo'
+    region_id: 'Western Balkans'
+    coverage_status: 'active'

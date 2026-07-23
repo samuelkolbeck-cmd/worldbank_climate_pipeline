@@ -1,0 +1,185 @@
+version: "2.0"
+status: "PRODUCTION - FinSAC Template Validation Rules"
+last_updated: "2026-07-21"
+
+# FinSAC Template Structure (9 sheets)
+finsac_schema:
+  required_sheets:
+    - "00_README"
+    - "01_Submission_Metadata"
+    - "02_Ref_Country"
+    - "03_Ref_Indicator"
+    - "04_Ref_Region"
+    - "05_Ref_Sector_NACE"
+    - "06_Data_National"
+    - "07_Data_Regional"
+    - "08_Data_Sectoral"
+  
+  metadata_sheet: "01_Submission_Metadata"
+  metadata_columns:
+    - "country_code"
+    - "round_id"
+    - "data_as_of_year"
+    - "submission_date"
+    - "analyst_name"
+    - "analyst_email"
+
+# Reference Data Validation (Foreign Keys)
+reference_integrity:
+  - id: "country_code_valid"
+    type: "foreign_key"
+    field: "country_code"
+    reference_table: "ref_country.yaml"
+    reference_field: "iso3"
+    action: "fail"
+    error_message: "Invalid country_code: '{country_code}' not in ref_country"
+  
+  - id: "indicator_id_valid"
+    type: "foreign_key"
+    field: "indicator_id"
+    reference_table: "indicators.yaml"
+    reference_field: "id"
+    action: "fail"
+    error_message: "Invalid indicator_id: '{indicator_id}' not in indicators"
+  
+  - id: "region_id_valid"
+    type: "foreign_key"
+    field: "region_id"
+    reference_table: "ref_region.yaml"
+    reference_field: "id"
+    sheets: ["07_Data_Regional"]
+    action: "fail"
+    error_message: "Invalid region_id: '{region_id}' not in ref_region"
+  
+  - id: "nace_code_valid"
+    type: "foreign_key"
+    field: "nace_node_id"
+    reference_table: "ref_sector_nace.yaml"
+    reference_field: "nace_code"
+    sheets: ["08_Data_Sectoral"]
+    action: "fail"
+    error_message: "Invalid nace_node_id: '{nace_node_id}' not in ref_sector_nace"
+
+# Geographic Hierarchy Validation
+geographic_hierarchy:
+  - id: "region_country_match"
+    type: "hierarchy_consistency"
+    parent_field: "country_code"
+    child_field: "region_id"
+    action: "fail"
+    error_message: "Region '{region_id}' does not belong to country '{country_code}'"
+    applies_to: ["07_Data_Regional"]
+
+# Data Granularity Checks
+data_granularity:
+  - id: "national_data_granularity"
+    type: "granularity_check"
+    sheet: "06_Data_National"
+    required_fields: ["round_id", "country_code", "year", "indicator_id", "value"]
+    forbidden_fields: ["region_id", "nace_node_id"]
+    action: "fail"
+    error_message: "National data should not contain region_id or nace_node_id"
+  
+  - id: "regional_data_granularity"
+    type: "granularity_check"
+    sheet: "07_Data_Regional"
+    required_fields: ["round_id", "country_code", "year", "indicator_id", "region_id", "value"]
+    forbidden_fields: ["nace_node_id"]
+    action: "fail"
+    error_message: "Regional data should not contain nace_node_id"
+  
+  - id: "sectoral_data_granularity"
+    type: "granularity_check"
+    sheet: "08_Data_Sectoral"
+    required_fields: ["round_id", "country_code", "year", "indicator_id", "nace_node_id", "value"]
+    forbidden_fields: ["region_id"]
+    action: "fail"
+    error_message: "Sectoral data should not contain region_id"
+
+# Currency and FX Rate Validation
+currency_validation:
+  - id: "currency_consistency"
+    type: "conditional_required"
+    condition: "currency is not NULL"
+    required_field: "fx_rate_to_eur"
+    action: "fail"
+    error_message: "If currency is specified, fx_rate_to_eur must be provided"
+  
+  - id: "fx_rate_validity"
+    type: "value_range"
+    field: "fx_rate_to_eur"
+    min_value: 0.001
+    max_value: 1000.0
+    action: "warn"
+    error_message: "FX rate {fx_rate_to_eur} seems unrealistic"
+
+# Data Quality Checks
+data_quality:
+  - id: "value_numeric"
+    type: "data_type"
+    field: "value"
+    expected_type: "numeric"
+    action: "fail"
+    error_message: "Value is not numeric: '{value}'"
+  
+  - id: "year_range_check"
+    type: "year_range"
+    field: "year"
+    min_year: 1990
+    max_year: 2025
+    action: "fail"
+    error_message: "Year {year} out of range [1990, 2025]"
+  
+  - id: "is_estimated_flag"
+    type: "categorical"
+    field: "is_estimated"
+    valid_values: [true, false, null]
+    action: "warn"
+    error_message: "Invalid is_estimated value: {is_estimated}"
+  
+  - id: "data_as_of_year_check"
+    type: "conditional"
+    condition: "year <= data_as_of_year"
+    action: "warn"
+    error_message: "Data year {year} is after data_as_of_year {data_as_of_year}"
+
+# Deduplication Rules
+deduplication:
+  national:
+    unique_key: ["country_code", "year", "indicator_id"]
+    conflict_resolution: "latest_submission"
+  
+  regional:
+    unique_key: ["country_code", "region_id", "year", "indicator_id"]
+    conflict_resolution: "latest_submission"
+  
+  sectoral:
+    unique_key: ["country_code", "nace_node_id", "year", "indicator_id"]
+    conflict_resolution: "latest_submission"
+
+# Round and Revision Tracking
+round_validation:
+  - id: "round_id_format"
+    type: "regex"
+    field: "round_id"
+    pattern: "^\\d{4}-(H[12]|Q[1-4])$"
+    action: "fail"
+    error_message: "Invalid round_id format: '{round_id}'. Expected YYYY-H1/H2 or YYYY-Q1/Q2/Q3/Q4"
+  
+  - id: "unique_round_per_country"
+    type: "duplicate_check"
+    fields: ["country_code", "round_id"]
+    action: "warn"
+    error_message: "Country {country_code} already submitted for round {round_id}"
+
+# Quality Thresholds
+quality_thresholds:
+  min_national_indicators_required: 10
+  max_missing_P1_indicators: 5
+  min_data_completeness: 0.70
+
+# Validation Severity Levels
+severity_mapping:
+  fail: "ERROR"
+  warn: "WARNING"
+  info: "INFO"

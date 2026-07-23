@@ -1,0 +1,68 @@
+version: "1.0"
+
+layer5_scoring:
+  physical_risk:
+    id: "physical_risk"
+    formula: "simple_average"
+    components:
+      - indicator_id: "i_002"
+        weight: 1.0
+      - indicator_id: "i_003"
+        weight: 1.0
+      - indicator_id: "i_004"
+        weight: 1.0
+      - indicator_id: "i_005"
+        weight: 1.0
+      - indicator_id: "i_006"
+        weight: 1.0
+    output_range: [0.0, 1.0]
+    decimal_places: 3
+
+  transition_risk:
+    id: "transition_risk"
+    formula: "weighted_average_minmax"
+    components:
+      - indicator_id: "i_011"
+        weight: 0.40
+      - indicator_id: "i_012"
+        weight: 0.30
+      - indicator_id: "i_013"
+        weight: 0.20
+      - indicator_id: "i_014"
+        weight: 0.10
+    output_range: [0.0, 1.0]
+    decimal_places: 3
+
+  financial_vulnerability:
+    id: "financial_vulnerability"
+    formula: "weighted_average_minmax"
+    components:
+      - indicator_id: "i_021"
+        weight: 0.30
+      - indicator_id: "i_022"
+        weight: 0.20
+      - indicator_id: "i_023"
+        weight: 0.20
+      - indicator_id: "i_024"
+        weight: 0.20
+      - indicator_id: "i_025"
+        weight: 0.10
+    output_range: [0.0, 1.0]
+    decimal_places: 3
+
+  ccr_score:
+    id: "ccr_score"
+    formula: "weighted_average"
+    components:
+      - component_id: "physical_risk"
+        weight: 0.35
+      - component_id: "transition_risk"
+        weight: 0.40
+      - component_id: "financial_vulnerability"
+        weight: 0.25
+    output_range: [0.0, 1.0]
+    decimal_places: 3
+
+ranking:
+  method: "ccr_score_descending"
+  tie_breaking: "alphabetical"

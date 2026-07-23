@@ -1,0 +1,48 @@
+version: "1.0"
+
+excel_structure:
+  sheet_metadata:
+    sheet_name: "Metadata"
+    fields:
+      - cell: "A1"
+        label: "Country Name"
+        type: "text"
+      - cell: "A2"
+        label: "Country ISO3"
+        type: "text"
+      - cell: "A3"
+        label: "Reporting Year"
+        type: "integer"
+      - cell: "A4"
+        label: "Submitted By"
+        type: "text"
+      - cell: "A5"
+        label: "Submission Date"
+        type: "date"
+      - cell: "A6"
+        label: "Data Sources"
+        type: "text"
+  
+  sheet_data:
+    sheet_name: "Data_Submission"
+    header_row: 1
+    data_start_row: 2
+    columns:
+      - col: "A"
+        name: "indicator_id"
+        type: "text"
+      - col: "B"
+        name: "year"
+        type: "integer"
+      - col: "C"
+        name: "value"
+        type: "numeric"
+      - col: "D"
+        name: "quality_flag"
+        type: "categorical"
+      - col: "E"
+        name: "data_source"
+        type: "text"
+      - col: "F"
+        name: "notes"
+        type: "text"

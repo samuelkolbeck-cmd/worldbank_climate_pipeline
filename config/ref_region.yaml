@@ -1,0 +1,805 @@
+version: "1.0"
+last_updated: "2026-07-21"
+status: "PRODUCTION - FinSAC regions"
+total_regions: 160
+regions:
+  ALB-BERAT:
+    name: 'ALB'
+    country_iso3: 'Berat'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-DIBËR:
+    name: 'ALB'
+    country_iso3: 'Dibër'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-DURRËS:
+    name: 'ALB'
+    country_iso3: 'Durrës'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-ELBASA:
+    name: 'ALB'
+    country_iso3: 'Elbasan'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-FIER:
+    name: 'ALB'
+    country_iso3: 'Fier'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-GJIROK:
+    name: 'ALB'
+    country_iso3: 'Gjirokastër'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-KORÇË:
+    name: 'ALB'
+    country_iso3: 'Korçë'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-KUKËS:
+    name: 'ALB'
+    country_iso3: 'Kukës'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-LEZHË:
+    name: 'ALB'
+    country_iso3: 'Lezhë'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-SHKODË:
+    name: 'ALB'
+    country_iso3: 'Shkodër'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-TIRANA:
+    name: 'ALB'
+    country_iso3: 'Tirana'
+    level: 'NUTS2'
+    parent_region: None
+  ALB-VLORË:
+    name: 'ALB'
+    country_iso3: 'Vlorë'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-ARAGAT:
+    name: 'ARM'
+    country_iso3: 'Aragatsotn'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-ARARAT:
+    name: 'ARM'
+    country_iso3: 'Ararat'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-ARMAVI:
+    name: 'ARM'
+    country_iso3: 'Armavir'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-GEGHAR:
+    name: 'ARM'
+    country_iso3: 'Gegharkunik'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-KOTAYK:
+    name: 'ARM'
+    country_iso3: 'Kotayk'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-LORI:
+    name: 'ARM'
+    country_iso3: 'Lori'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-SHIRAK:
+    name: 'ARM'
+    country_iso3: 'Shirak'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-SYUNIK:
+    name: 'ARM'
+    country_iso3: 'Syunik'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-TAVUSH:
+    name: 'ARM'
+    country_iso3: 'Tavush'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-VAYOTS:
+    name: 'ARM'
+    country_iso3: 'Vayots Dzor'
+    level: 'NUTS2'
+    parent_region: None
+  ARM-YEREVA:
+    name: 'ARM'
+    country_iso3: 'Yerevan'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-ABSHER:
+    name: 'AZE'
+    country_iso3: 'Absheron-Khizi'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-BAKU:
+    name: 'AZE'
+    country_iso3: 'Baku'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-CENTRA:
+    name: 'AZE'
+    country_iso3: 'Central Aran'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-DAGLIG:
+    name: 'AZE'
+    country_iso3: 'Daglig Shirvan'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-EASTZA:
+    name: 'AZE'
+    country_iso3: 'East Zangezur'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-GANJAD:
+    name: 'AZE'
+    country_iso3: 'Ganja-Dashkasan'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-GARABA:
+    name: 'AZE'
+    country_iso3: 'Garabagh'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-GAZAKH:
+    name: 'AZE'
+    country_iso3: 'Gazakh-Tovuz'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-GUBAKH:
+    name: 'AZE'
+    country_iso3: 'Guba-Khachmaz'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-LANKAR:
+    name: 'AZE'
+    country_iso3: 'Lankaran-Astara'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-MILMUG:
+    name: 'AZE'
+    country_iso3: 'Mil-Mughan'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-NAKHCH:
+    name: 'AZE'
+    country_iso3: 'Nakhchivan'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-SHAKIZ:
+    name: 'AZE'
+    country_iso3: 'Shaki-Zagatala'
+    level: 'NUTS2'
+    parent_region: None
+  AZE-SHIRVA:
+    name: 'AZE'
+    country_iso3: 'Shirvan-Salyan'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-BREST:
+    name: 'BLR'
+    country_iso3: 'Brest'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-CITYOF:
+    name: 'BLR'
+    country_iso3: 'City of Minsk'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-GOMEL:
+    name: 'BLR'
+    country_iso3: 'Gomel'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-GRODNO:
+    name: 'BLR'
+    country_iso3: 'Grodno'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-MINSK:
+    name: 'BLR'
+    country_iso3: 'Minsk'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-MOGILE:
+    name: 'BLR'
+    country_iso3: 'Mogilev'
+    level: 'NUTS2'
+    parent_region: None
+  BLR-VITEBS:
+    name: 'BLR'
+    country_iso3: 'Vitebsk'
+    level: 'NUTS2'
+    parent_region: None
+  BIH-BRČKOD:
+    name: 'BIH'
+    country_iso3: 'Brčko District'
+    level: 'NUTS2'
+    parent_region: None
+  BIH-FEDERA:
+    name: 'BIH'
+    country_iso3: 'Federation of Bosnia and Herzegovina'
+    level: 'NUTS2'
+    parent_region: None
+  BIH-REPUBL:
+    name: 'BIH'
+    country_iso3: 'Republika Srpska'
+    level: 'NUTS2'
+    parent_region: None
+  BGR-SEVERE:
+    name: 'BGR'
+    country_iso3: 'Severen tsentralen'
+    level: 'NUTS2'
+    parent_region: None
+  BGR-SEVERO:
+    name: 'BGR'
+    country_iso3: 'Severoiztochen'
+    level: 'NUTS2'
+    parent_region: None
+  BGR-SEVERO:
+    name: 'BGR'
+    country_iso3: 'Severozapaden'
+    level: 'NUTS2'
+    parent_region: None
+  BGR-YUGOIZ:
+    name: 'BGR'
+    country_iso3: 'Yugoiztochen'
+    level: 'NUTS2'
+    parent_region: None
+  BGR-YUGOZA:
+    name: 'BGR'
+    country_iso3: 'Yugozapaden'
+    level: 'NUTS2'
+    parent_region: None
+  BGR-YUZHEN:
+    name: 'BGR'
+    country_iso3: 'Yuzhen tsentralen'
+    level: 'NUTS2'
+    parent_region: None
+  HRV-ADRIAT:
+    name: 'HRV'
+    country_iso3: 'Adriatic Croatia'
+    level: 'NUTS2'
+    parent_region: None
+  HRV-CITYOF:
+    name: 'HRV'
+    country_iso3: 'City of Zagreb'
+    level: 'NUTS2'
+    parent_region: None
+  HRV-NORTHE:
+    name: 'HRV'
+    country_iso3: 'Northern Croatia'
+    level: 'NUTS2'
+    parent_region: None
+  HRV-PANNON:
+    name: 'HRV'
+    country_iso3: 'Pannonian Croatia'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-ABKHAZ:
+    name: 'GEO'
+    country_iso3: 'Abkhazia'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-ADJARA:
+    name: 'GEO'
+    country_iso3: 'Adjara'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-GURIA:
+    name: 'GEO'
+    country_iso3: 'Guria'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-IMERET:
+    name: 'GEO'
+    country_iso3: 'Imereti'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-KAKHET:
+    name: 'GEO'
+    country_iso3: 'Kakheti'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-KVEMOK:
+    name: 'GEO'
+    country_iso3: 'Kvemo Kartli'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-MTSKHE:
+    name: 'GEO'
+    country_iso3: 'Mtskheta-Mtianeti'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-RACHAL:
+    name: 'GEO'
+    country_iso3: 'Racha-Lechkhumi and Kvemo Svaneti'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-SAMEGR:
+    name: 'GEO'
+    country_iso3: 'Samegrelo-Zemo Svaneti'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-SAMTSK:
+    name: 'GEO'
+    country_iso3: 'Samtskhe-Javakheti'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-SHIDAK:
+    name: 'GEO'
+    country_iso3: 'Shida Kartli'
+    level: 'NUTS2'
+    parent_region: None
+  GEO-TBILIS:
+    name: 'GEO'
+    country_iso3: 'Tbilisi'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-FERIZA:
+    name: 'XKX'
+    country_iso3: 'Ferizaj District'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-GJAKOV:
+    name: 'XKX'
+    country_iso3: 'Gjakova District'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-GJILAN:
+    name: 'XKX'
+    country_iso3: 'Gjilan District'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-MITROV:
+    name: 'XKX'
+    country_iso3: 'Mitrovica District'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-PEJADI:
+    name: 'XKX'
+    country_iso3: 'Peja District'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-PRISTI:
+    name: 'XKX'
+    country_iso3: 'Pristina District'
+    level: 'NUTS2'
+    parent_region: None
+  XKX-PRIZRE:
+    name: 'XKX'
+    country_iso3: 'Prizren District'
+    level: 'NUTS2'
+    parent_region: None
+  MDA-CENTER:
+    name: 'MDA'
+    country_iso3: 'Center'
+    level: 'NUTS2'
+    parent_region: None
+  MDA-CHIŞIN:
+    name: 'MDA'
+    country_iso3: 'Chişinău'
+    level: 'NUTS2'
+    parent_region: None
+  MDA-GĂGĂUZ:
+    name: 'MDA'
+    country_iso3: 'Găgăuzia'
+    level: 'NUTS2'
+    parent_region: None
+  MDA-NORTH:
+    name: 'MDA'
+    country_iso3: 'North'
+    level: 'NUTS2'
+    parent_region: None
+  MDA-SOUTH:
+    name: 'MDA'
+    country_iso3: 'South'
+    level: 'NUTS2'
+    parent_region: None
+  MDA-TRANSN:
+    name: 'MDA'
+    country_iso3: 'Transnistria'
+    level: 'NUTS2'
+    parent_region: None
+  MNE-CENTRA:
+    name: 'MNE'
+    country_iso3: 'Central Region'
+    level: 'NUTS2'
+    parent_region: None
+  MNE-COASTA:
+    name: 'MNE'
+    country_iso3: 'Coastal Region'
+    level: 'NUTS2'
+    parent_region: None
+  MNE-NORTHE:
+    name: 'MNE'
+    country_iso3: 'Northern Region'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-EAST:
+    name: 'MKD'
+    country_iso3: 'East'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-NORTHE:
+    name: 'MKD'
+    country_iso3: 'Northeast'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-PELAGO:
+    name: 'MKD'
+    country_iso3: 'Pelagonia'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-POLOG:
+    name: 'MKD'
+    country_iso3: 'Polog'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-SKOPJE:
+    name: 'MKD'
+    country_iso3: 'Skopje'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-SOUTHE:
+    name: 'MKD'
+    country_iso3: 'Southeast'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-SOUTHW:
+    name: 'MKD'
+    country_iso3: 'Southwest'
+    level: 'NUTS2'
+    parent_region: None
+  MKD-VARDAR:
+    name: 'MKD'
+    country_iso3: 'Vardar'
+    level: 'NUTS2'
+    parent_region: None
+  POL-GREATE:
+    name: 'POL'
+    country_iso3: 'Greater Poland'
+    level: 'NUTS2'
+    parent_region: None
+  POL-KUYAVI:
+    name: 'POL'
+    country_iso3: 'Kuyavian-Pomeranian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-LESSER:
+    name: 'POL'
+    country_iso3: 'Lesser Poland'
+    level: 'NUTS2'
+    parent_region: None
+  POL-LOWERS:
+    name: 'POL'
+    country_iso3: 'Lower Silesian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-LUBLIN:
+    name: 'POL'
+    country_iso3: 'Lublin'
+    level: 'NUTS2'
+    parent_region: None
+  POL-LUBUSZ:
+    name: 'POL'
+    country_iso3: 'Lubusz'
+    level: 'NUTS2'
+    parent_region: None
+  POL-MASOVI:
+    name: 'POL'
+    country_iso3: 'Masovian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-OPOLE:
+    name: 'POL'
+    country_iso3: 'Opole'
+    level: 'NUTS2'
+    parent_region: None
+  POL-PODLAS:
+    name: 'POL'
+    country_iso3: 'Podlaskie'
+    level: 'NUTS2'
+    parent_region: None
+  POL-POMERA:
+    name: 'POL'
+    country_iso3: 'Pomeranian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-SILESI:
+    name: 'POL'
+    country_iso3: 'Silesian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-SUBCAR:
+    name: 'POL'
+    country_iso3: 'Subcarpathian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-WARMIA:
+    name: 'POL'
+    country_iso3: 'Warmian-Masurian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-WESTPO:
+    name: 'POL'
+    country_iso3: 'West Pomeranian'
+    level: 'NUTS2'
+    parent_region: None
+  POL-ŁÓDŹ:
+    name: 'POL'
+    country_iso3: 'Łódź'
+    level: 'NUTS2'
+    parent_region: None
+  POL-ŚWIĘTO:
+    name: 'POL'
+    country_iso3: 'Świętokrzyskie'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-BUCURE:
+    name: 'ROU'
+    country_iso3: 'București-Ilfov'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-CENTRU:
+    name: 'ROU'
+    country_iso3: 'Centru'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-NORDES:
+    name: 'ROU'
+    country_iso3: 'Nord-Est'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-NORDVE:
+    name: 'ROU'
+    country_iso3: 'Nord-Vest'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-SUDEST:
+    name: 'ROU'
+    country_iso3: 'Sud-Est'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-SUDMUN:
+    name: 'ROU'
+    country_iso3: 'Sud-Muntenia'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-SUDVES:
+    name: 'ROU'
+    country_iso3: 'Sud-Vest Oltenia'
+    level: 'NUTS2'
+    parent_region: None
+  ROU-VEST:
+    name: 'ROU'
+    country_iso3: 'Vest'
+    level: 'NUTS2'
+    parent_region: None
+  SRB-BELGRA:
+    name: 'SRB'
+    country_iso3: 'Belgrade'
+    level: 'NUTS2'
+    parent_region: None
+  SRB-KOSOVO:
+    name: 'SRB'
+    country_iso3: 'Kosovo and Metohija'
+    level: 'NUTS2'
+    parent_region: None
+  SRB-SOUTHE:
+    name: 'SRB'
+    country_iso3: 'Southern and Eastern Serbia'
+    level: 'NUTS2'
+    parent_region: None
+  SRB-VOJVOD:
+    name: 'SRB'
+    country_iso3: 'Vojvodina'
+    level: 'NUTS2'
+    parent_region: None
+  SRB-ŠUMADI:
+    name: 'SRB'
+    country_iso3: 'Šumadija and Western Serbia'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-CHERKA:
+    name: 'UKR'
+    country_iso3: 'Cherkasy'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-CHERNI:
+    name: 'UKR'
+    country_iso3: 'Chernihiv'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-CHERNI:
+    name: 'UKR'
+    country_iso3: 'Chernivtsi'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-DNIPRO:
+    name: 'UKR'
+    country_iso3: "Dnipropetrovs'k"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-DONETS:
+    name: 'UKR'
+    country_iso3: "Donets'k"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-IVANOF:
+    name: 'UKR'
+    country_iso3: "Ivano-Frankivs'k"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-KHARKI:
+    name: 'UKR'
+    country_iso3: 'Kharkiv'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-KHERSO:
+    name: 'UKR'
+    country_iso3: 'Kherson'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-KHMELN:
+    name: 'UKR'
+    country_iso3: "Khmel'nyts'kyy"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-KIEV:
+    name: 'UKR'
+    country_iso3: 'Kiev'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-KIEVCI:
+    name: 'UKR'
+    country_iso3: 'Kiev City'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-KIROVO:
+    name: 'UKR'
+    country_iso3: 'Kirovohrad'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-LVIV:
+    name: 'UKR'
+    country_iso3: "L'viv"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-LUHANS:
+    name: 'UKR'
+    country_iso3: "Luhans'k"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-MYKOLA:
+    name: 'UKR'
+    country_iso3: 'Mykolayiv'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-ODESSA:
+    name: 'UKR'
+    country_iso3: 'Odessa'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-POLTAV:
+    name: 'UKR'
+    country_iso3: 'Poltava'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-RIVNE:
+    name: 'UKR'
+    country_iso3: 'Rivne'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-SUMY:
+    name: 'UKR'
+    country_iso3: 'Sumy'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-TERNOP:
+    name: 'UKR'
+    country_iso3: "Ternopil'"
+    level: 'NUTS2'
+    parent_region: None
+  UKR-TRANSC:
+    name: 'UKR'
+    country_iso3: 'Transcarpathia'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-VINNYT:
+    name: 'UKR'
+    country_iso3: 'Vinnytsya'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-VOLYN:
+    name: 'UKR'
+    country_iso3: 'Volyn'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-ZAPORI:
+    name: 'UKR'
+    country_iso3: 'Zaporizhzhya'
+    level: 'NUTS2'
+    parent_region: None
+  UKR-ZHYTOM:
+    name: 'UKR'
+    country_iso3: 'Zhytomyr'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-ANDIJO:
+    name: 'UZB'
+    country_iso3: 'Andijon'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-BUKHOR:
+    name: 'UZB'
+    country_iso3: 'Bukhoro'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-FERGHA:
+    name: 'UZB'
+    country_iso3: 'Ferghana'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-JIZZAK:
+    name: 'UZB'
+    country_iso3: 'Jizzakh'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-KARAKA:
+    name: 'UZB'
+    country_iso3: 'Karakalpakstan'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-KASHKA:
+    name: 'UZB'
+    country_iso3: 'Kashkadarya'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-KHOREZ:
+    name: 'UZB'
+    country_iso3: 'Khorezm'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-NAMANG:
+    name: 'UZB'
+    country_iso3: 'Namangan'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-NAVOI:
+    name: 'UZB'
+    country_iso3: 'Navoi'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-SAMARK:
+    name: 'UZB'
+    country_iso3: 'Samarkand'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-SIRDAR:
+    name: 'UZB'
+    country_iso3: 'Sirdaryo'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-SURKHA:
+    name: 'UZB'
+    country_iso3: 'Surkhandarya'
+    level: 'NUTS2'
+    parent_region: None
+  UZB-TASHKE:
+    name: 'UZB'
+    country_iso3: 'Tashkent'
+    level: 'NUTS2'
+    parent_region: None

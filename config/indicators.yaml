@@ -1,0 +1,1429 @@
+version: "1.0"
+last_updated: "2026-07-21"
+status: "PRODUCTION - Real FinSAC indicators"
+total_indicators: 89
+indicators:
+  GHG_EMISSIONS_EXCL_LULUCF_KT_CO2_EQ:
+    name: 'GHG emissions (excl. LULUCF) (kt CO2 eq)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'GHG emissions (excl. LULUCF) (kt CO2 eq) indicator'
+  GHG_EMISSIONS_BY_GAS_CARBON_DIOXIDE_CO2_:
+    name: 'GHG emissions by gas: Carbon dioxide (CO2) (kt CO2 eq)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'GHG emissions by gas: Carbon dioxide (CO2) (kt CO2 eq) indicator'
+  GHG_EMISSIONS_BY_GAS_METHANE_CH4_KT_CO2_:
+    name: 'GHG emissions by gas: Methane (CH4) (kt CO2 eq)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'GHG emissions by gas: Methane (CH4) (kt CO2 eq) indicator'
+  GHG_EMISSIONS_BY_GAS_NITROUS_OXIDE_N2O_K:
+    name: 'GHG emissions by gas: Nitrous oxide (N2O) (kt CO2 eq)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'GHG emissions by gas: Nitrous oxide (N2O) (kt CO2 eq) indicator'
+  EMISSIONS_OF_GHG_IN_THE_COUNTRY_BY_HOUSE:
+    name: 'Emissions of GHG in the country by households (kt CO2 eq)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Emissions of GHG in the country by households (kt CO2 eq) indicator'
+  CLASSIFICATION_OF_MORTGAGE_LOANS_BASED_O:
+    name: 'Classification of mortgage loans based on house energy efficiency (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Classification of mortgage loans based on house energy efficiency (%) indicator'
+  EXPOSURE_TO_FLOODS_INDEX_01:
+    name: 'Exposure to floods (Index 0-1)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Exposure to floods (Index 0-1) indicator'
+  EXPOSURE_TO_WILDFIRES_INDEX_01:
+    name: 'Exposure to wildfires (Index 0-1)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Exposure to wildfires (Index 0-1) indicator'
+  EXPOSURE_TO_LANDSLIDES_INDEX_01:
+    name: 'Exposure to landslides (Index 0-1)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Exposure to landslides (Index 0-1) indicator'
+  EXPOSURE_TO_DROUGHTS_INDEX_01:
+    name: 'Exposure to droughts (Index 0-1)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Exposure to droughts (Index 0-1) indicator'
+  VULNERABILITY_INDEX_01:
+    name: 'Vulnerability (Index 0-1)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Vulnerability (Index 0-1) indicator'
+  RELATIVE_PRODUCTIVITY_INDEX:
+    name: 'Relative productivity (Index)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Relative productivity (Index) indicator'
+  SHARE_OF_TREE_COVER_LOSS:
+    name: 'Share of tree cover loss (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of tree cover loss (%) indicator'
+  SHARE_OF_TREE_COVER:
+    name: 'Share of tree cover (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '01 Climate Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of tree cover (%) indicator'
+  SHARE_OF_EXPORTS_IN_LOW_CARBON_TECHNOLOG:
+    name: 'Share of exports in low carbon technology products in total exports (%)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of exports in low carbon technology products in total exports (%) indicator'
+  SHARE_OF_IMPORTS_IN_LOW_CARBON_TECHNOLOG:
+    name: 'Share of imports in low carbon technology products in total imports (%)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of imports in low carbon technology products in total imports (%) indicator'
+  TOTAL_TRADE_IN_LOW_CARBON_TECHNOLOGY_PRO:
+    name: 'Total trade in low carbon technology products (in mil EUR)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Total trade in low carbon technology products (in mil EUR) indicator'
+  ENERGY_PRODUCTION_COAL_GWH:
+    name: 'Energy production: Coal (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Coal (GWh) indicator'
+  ENERGY_PRODUCTION_OIL_PRODUCTS_GWH:
+    name: 'Energy production: Oil products (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Oil products (GWh) indicator'
+  ENERGY_PRODUCTION_BIOMASS_GWH:
+    name: 'Energy production: Biomass (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Biomass (GWh) indicator'
+  ENERGY_PRODUCTION_HYDROPOWER_GWH:
+    name: 'Energy production: Hydropower (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Hydropower (GWh) indicator'
+  ENERGY_PRODUCTION_SOLAR_ENERGY_GWH:
+    name: 'Energy production: Solar energy (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Solar energy (GWh) indicator'
+  ENERGY_PRODUCTION_WIND_ENERGY_GWH:
+    name: 'Energy production: Wind energy (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Wind energy (GWh) indicator'
+  ENERGY_PRODUCTION_ELECTRICAL_ENERGY_GWH:
+    name: 'Energy production: Electrical energy (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Electrical energy (GWh) indicator'
+  ENERGY_PRODUCTION_TOTAL_RENEWABLE_GWH:
+    name: 'Energy production: Total renewable (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Total renewable (GWh) indicator'
+  ENERGY_PRODUCTION_TOTAL_GWH:
+    name: 'Energy production: Total (GWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy production: Total (GWh) indicator'
+  SHARE_OF_RENEWABLE_ENERGY_IN_GROSS_FINAL:
+    name: 'Share of renewable energy in gross final energy consumption (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of renewable energy in gross final energy consumption (%) indicator'
+  SHARE_OF_ELECTRICITY_FROM_RENEWABLE_SOUR:
+    name: 'Share of electricity from renewable sources in total electricity production (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of electricity from renewable sources in total electricity production (%) indicator'
+  SHARE_OF_ELECTRICITY_FROM_RENEWABLE_SOUR_2:
+    name: 'Share of electricity from renewable sources in gross national electricity consumption (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of electricity from renewable sources in gross national electricity consumption (%) indicator'
+  FINAL_NATIONAL_ENERGY_CONSUMPTION_IN_HOU:
+    name: 'Final national energy consumption in households per capita (kWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Final national energy consumption in households per capita (kWh) indicator'
+  FINAL_NATIONAL_ELECTRICITY_CONSUMPTION_I:
+    name: 'Final national electricity consumption in households per capita (kWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Final national electricity consumption in households per capita (kWh) indicator'
+  GROSS_NATIONAL_ELECTRICITY_CONSUMPTION_P:
+    name: 'Gross national electricity consumption per capita (kWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Gross national electricity consumption per capita (kWh) indicator'
+  NET_IMPORT_OF_ENERGY_OF_ENERGY_USE:
+    name: 'Net import of energy (% of energy use)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Net import of energy (% of energy use) indicator'
+  NET_IMPORT_OF_ELECTRICITY_GWH:
+    name: 'Net import of electricity (GWh)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Net import of electricity (GWh) indicator'
+  ENERGY_INTENSITY_MJ_GDP:
+    name: 'Energy intensity (MJ/$ GDP)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy intensity (MJ/$ GDP) indicator'
+  INPUT_ENERGY_CO2_GG_CO2_EQ:
+    name: '[INPUT] Energy CO2 (Gg CO2 eq)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: '[INPUT] Energy CO2 (Gg CO2 eq) indicator'
+  INPUT_TOTAL_ELECTRICITY_KTOE:
+    name: '[INPUT] Total electricity (ktoe)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: '[INPUT] Total electricity (ktoe) indicator'
+  CARBON_INTENSITY_OF_ELECTRICITY_PRODUCTI:
+    name: 'Carbon intensity of electricity production (g CO2eq/kWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Carbon intensity of electricity production (g CO2eq/kWh) indicator'
+  INPUT_RENEWABLE_ENERGY_MWH:
+    name: '[INPUT] Renewable Energy (MWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: '[INPUT] Renewable Energy (MWh) indicator'
+  INPUT_TOTAL_PRICE_EUR:
+    name: '[INPUT] Total Price (EUR)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: '[INPUT] Total Price (EUR) indicator'
+  PRICE_OF_RENEWABLE_ENERGY_EURMWH:
+    name: 'Price of renewable energy (EUR/MWh)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Price of renewable energy (EUR/MWh) indicator'
+  PUBLIC_INVESTMENTS_IN_DIFFERENT_ENERGY_T:
+    name: 'Public investments in different energy technologies (Millions USD)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Public investments in different energy technologies (Millions USD) indicator'
+  ENVIRONMENTAL_TAXES_ENERGY_TAXES_ABSOLUT:
+    name: 'Environmental taxes: Energy taxes (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Environmental taxes: Energy taxes (Absolute) indicator'
+  ENVIRONMENTAL_TAXES_TRANSPORT_TAXES_ABSO:
+    name: 'Environmental taxes: Transport taxes (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Environmental taxes: Transport taxes (Absolute) indicator'
+  ENVIRONMENTAL_TAXES_POLLUTION_TAXES_ABSO:
+    name: 'Environmental taxes: Pollution taxes (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Environmental taxes: Pollution taxes (Absolute) indicator'
+  ENVIRONMENTAL_TAXES_RESOURCE_TAXES_ABSOL:
+    name: 'Environmental taxes: Resource taxes (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Environmental taxes: Resource taxes (Absolute) indicator'
+  ENVIRONMENTAL_TAXES_TOTAL_ABSOLUTE:
+    name: 'Environmental taxes: Total (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Environmental taxes: Total (Absolute) indicator'
+  ENERGY_SUBSIDIES_FOSSIL_FUELS_FISCAL_SUP:
+    name: 'Energy subsidies: Fossil fuels - Fiscal support (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy subsidies: Fossil fuels - Fiscal support (Absolute) indicator'
+  ENERGY_SUBSIDIES_FOSSIL_FUELS_CREDIT_SUP:
+    name: 'Energy subsidies: Fossil fuels - Credit support (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy subsidies: Fossil fuels - Credit support (Absolute) indicator'
+  ENERGY_SUBSIDIES_RENEWABLES_FISCAL_SUPPO:
+    name: 'Energy subsidies: Renewables - Fiscal support (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy subsidies: Renewables - Fiscal support (Absolute) indicator'
+  ENERGY_SUBSIDIES_RENEWABLES_CREDIT_SUPPO:
+    name: 'Energy subsidies: Renewables - Credit support (Absolute)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Energy subsidies: Renewables - Credit support (Absolute) indicator'
+  NATIONAL_EXPENDITURE_ON_ENVIRONMENTAL_PR:
+    name: 'National expenditure on environmental protection (% of GDP)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'National expenditure on environmental protection (% of GDP) indicator'
+  ELECTRICITY_PRICES_FOR_HOUSEHOLD_CONSUME:
+    name: 'Electricity prices for household consumers (incl. VAT)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Electricity prices for household consumers (incl. VAT) indicator'
+  ELECTRICITY_PRICES_FOR_NONHOUSEHOLD_CONS:
+    name: 'Electricity prices for non-household consumers (incl. VAT)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Electricity prices for non-household consumers (incl. VAT) indicator'
+  COST_OF_RENEWABLE_ENERGY:
+    name: 'Cost of renewable energy'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Cost of renewable energy indicator'
+  FDI_IN_LOW_CARBON_SECTORS:
+    name: 'FDI in low carbon sectors'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'macro'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '02 Real Economy'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'FDI in low carbon sectors indicator'
+  REGULATORY_CAPITAL_RWA:
+    name: 'Regulatory capital / RWA (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Regulatory capital / RWA (%) indicator'
+  TIER_1_CAPITAL_RWA:
+    name: 'Tier 1 capital / RWA (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Tier 1 capital / RWA (%) indicator'
+  TIER_1_CAPITAL_TOTAL_ASSETS:
+    name: 'Tier 1 capital / total assets (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Tier 1 capital / total assets (%) indicator'
+  LIQUID_ASSETS_TOTAL_ASSETS:
+    name: 'Liquid assets / total assets (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Liquid assets / total assets (%) indicator'
+  LIQUID_ASSETS_SHORTTERM_LIABILITIES:
+    name: 'Liquid assets / short-term liabilities (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Liquid assets / short-term liabilities (%) indicator'
+  DEPOSITS_TOTAL_NONINTERBANK_LOANS:
+    name: 'Deposits / total noninterbank loans (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Deposits / total noninterbank loans (%) indicator'
+  RETURN_ON_ASSETS:
+    name: 'Return on assets (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Return on assets (%) indicator'
+  RETURN_ON_EQUITY:
+    name: 'Return on equity (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Return on equity (%) indicator'
+  NPLS_NET_OF_PROVISIONS_CAPITAL:
+    name: 'NPLs net of provisions / capital (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'NPLs net of provisions / capital (%) indicator'
+  NPLS_TOTAL_GROSS_LOANS:
+    name: 'NPLs / total gross loans (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'NPLs / total gross loans (%) indicator'
+  LARGE_EXPOSURES_CAPITAL:
+    name: 'Large exposures / capital (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Large exposures / capital (%) indicator'
+  FXDENOMINATED_LOANS_TOTAL_LOANS:
+    name: 'FX-denominated loans / total loans (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'FX-denominated loans / total loans (%) indicator'
+  FXDENOMINATED_LIABILITIES_TOTAL_LIABILIT:
+    name: 'FX-denominated liabilities / total liabilities (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'FX-denominated liabilities / total liabilities (%) indicator'
+  NET_OPEN_FX_POSITION_CAPITAL:
+    name: 'Net open FX position / capital (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '03 Core Financial Health'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Net open FX position / capital (%) indicator'
+  NONLIFE_INSURANCE_PENETRATION:
+    name: 'Non-life insurance penetration (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Non-life insurance penetration (%) indicator'
+  ACCESS_TO_FINANCE_OF_ADULTS:
+    name: 'Access to finance (% of adults)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Access to finance (% of adults) indicator'
+  NUMBER_OF_BANK_UNITS_OPERATING_PER_REGIO:
+    name: 'Number of bank units operating per region (Count)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Number of bank units operating per region (Count) indicator'
+  BANKS_CREDIT_AND_NPL_EXPOSURE_TO_INTERNA:
+    name: 'Banks’ credit and NPL exposure to international transition risks (CBAM, EUDR)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Banks’ credit and NPL exposure to international transition risks (CBAM, EUDR) indicator'
+  SHARE_OF_ACCOUNT_OWNERS_WHO_REPORT_FACIN:
+    name: 'Share of account owners who report facing climate-related disasters (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of account owners who report facing climate-related disasters (%) indicator'
+  SHARE_OF_ACCOUNT_OWNERS_WHO_BORROWED_MON:
+    name: 'Share of account owners who borrowed money from a financial institution in the last 12 months and reported facing climate disasters (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of account owners who borrowed money from a financial institution in the last 12 months and reported facing climate disasters (%) indicator'
+  SHARE_OF_ACCOUNT_OWNERS_WHO_RECEIVED_AGR:
+    name: 'Share of account owners who received agricultural payments in the past 12 months, and reported facing climate disasters (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of account owners who received agricultural payments in the past 12 months, and reported facing climate disasters (%) indicator'
+  SHARE_OF_EUEXPORTING_FIRMS_WITHIN_CBAM_S:
+    name: 'Share of EU-exporting firms within CBAM sector exposure (%)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of EU-exporting firms within CBAM sector exposure (%) indicator'
+  SHARE_OF_CBAM_EUEXPORTING_FIRMS_IN_TOTAL:
+    name: 'Share of CBAM EU-exporting firms in total NFC loans (%)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of CBAM EU-exporting firms in total NFC loans (%) indicator'
+  SHARE_OF_CBAM_EUEXPORTING_FIRMS_IN_TOTAL_2:
+    name: 'Share of CBAM EU-exporting firms in total loans (%)'
+    module: 'Economic Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of CBAM EU-exporting firms in total loans (%) indicator'
+  SHARE_OF_TOTAL_CBAM_SECTOR_EXPOSURE_IN_T:
+    name: 'Share of total CBAM sector exposure in total loans (%)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: '(see original unit column)'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '05 Climate Financial Indicators'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Share of total CBAM sector exposure in total loans (%) indicator'
+  BANK_CREDIT_INDIVIDUALS_BY_REGION:
+    name: 'Bank credit exposure to individuals, by region'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '06 Regional Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank credit exposure to individuals, by region indicator'
+  BANK_NPL_INDIVIDUALS_BY_REGION:
+    name: 'Bank NPL exposure to individuals, by region'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '06 Regional Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank NPL exposure to individuals, by region indicator'
+  BANK_CREDIT_COMPANIES_BY_REGION:
+    name: 'Bank credit exposure to companies, by region'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '06 Regional Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank credit exposure to companies, by region indicator'
+  BANK_NPL_COMPANIES_BY_REGION:
+    name: 'Bank NPL exposure to companies, by region'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '06 Regional Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank NPL exposure to companies, by region indicator'
+  GHG_EMISSIONS_BY_SECTOR:
+    name: 'GHG emissions by sector'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'climate'
+    unit: 'kt CO2 eq'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '07 Sectoral Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'GHG emissions by sector indicator'
+  BANK_CREDIT_COMPANIES_BY_SECTOR:
+    name: 'Bank credit risk exposure to companies, by sector'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '07 Sectoral Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank credit risk exposure to companies, by sector indicator'
+  BANK_NPL_COMPANIES_BY_SECTOR:
+    name: 'Bank NPL risk exposure to companies, by sector'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '07 Sectoral Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank NPL risk exposure to companies, by sector indicator'
+  BANK_CREDIT_CPRS_SECTOR:
+    name: 'Bank credit exposure to companies in Climate Policy Relevant Sectors (CPRS)'
+    module: 'Climate Data'
+    tier: 'P1'
+    data_type: 'financial'
+    unit: 'mln LCY'
+    source_type: 'auto'
+    coverage_year_start: 2015
+    coverage_year_end: 2025
+    geo_level: 'country'
+    risk_type: '07 Sectoral Data'
+    valid_range: [-10.0, 50.0]
+    decimal_places: 2
+    is_required: true
+    calculation_method: 'direct'
+    description: 'Bank credit exposure to companies in Climate Policy Relevant Sectors (CPRS) indicator'

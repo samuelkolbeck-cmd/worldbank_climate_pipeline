@@ -1,0 +1,1089 @@
+version: "1.0"
+last_updated: "2026-07-21"
+status: "PRODUCTION - NACE sectors"
+total_sectors: 271
+sectors:
+  N0001:
+    name: 'A'
+    level: 1
+    parent_code: None
+  N0002:
+    name: 'A1'
+    level: 2
+    parent_code: None
+  N0003:
+    name: 'A1.1&A1.2&A1.3'
+    level: 3
+    parent_code: None
+  N0004:
+    name: 'A1.13'
+    level: 3
+    parent_code: None
+  N0005:
+    name: 'A1.16'
+    level: 3
+    parent_code: None
+  N0006:
+    name: 'A1.111&A1.112'
+    level: 3
+    parent_code: None
+  N0007:
+    name: 'A1.191'
+    level: 3
+    parent_code: None
+  N0008:
+    name: 'A1.26'
+    level: 3
+    parent_code: None
+  N0009:
+    name: 'A1.21-A1.25'
+    level: 3
+    parent_code: None
+  N0010:
+    name: 'A1.1&A1.2&A1.3'
+    level: 3
+    parent_code: None
+  N0011:
+    name: 'A1.4'
+    level: 3
+    parent_code: None
+  N0012:
+    name: 'A1.41'
+    level: 3
+    parent_code: None
+  N0013:
+    name: 'A1.45'
+    level: 3
+    parent_code: None
+  N0014:
+    name: 'A1.46'
+    level: 3
+    parent_code: None
+  N0015:
+    name: 'A1.47'
+    level: 3
+    parent_code: None
+  N0016:
+    name: 'A1.49'
+    level: 3
+    parent_code: None
+  N0017:
+    name: 'A1.5&1.6'
+    level: 3
+    parent_code: None
+  N0018:
+    name: 'A1.7'
+    level: 3
+    parent_code: None
+  N0019:
+    name: 'A2'
+    level: 2
+    parent_code: None
+  N0020:
+    name: 'A2.1'
+    level: 3
+    parent_code: None
+  N0021:
+    name: 'A2.2'
+    level: 3
+    parent_code: None
+  N0022:
+    name: 'A2.3'
+    level: 3
+    parent_code: None
+  N0023:
+    name: 'A2.4'
+    level: 3
+    parent_code: None
+  N0024:
+    name: 'A3'
+    level: 2
+    parent_code: None
+  N0025:
+    name: 'B'
+    level: 1
+    parent_code: None
+  N0026:
+    name: 'B5'
+    level: 2
+    parent_code: None
+  N0027:
+    name: 'B6'
+    level: 2
+    parent_code: None
+  N0028:
+    name: 'B6.1'
+    level: 3
+    parent_code: None
+  N0029:
+    name: 'B6.2'
+    level: 3
+    parent_code: None
+  N0030:
+    name: 'B7'
+    level: 2
+    parent_code: None
+  N0031:
+    name: 'B7.1'
+    level: 3
+    parent_code: None
+  N0032:
+    name: 'B7.2'
+    level: 3
+    parent_code: None
+  N0033:
+    name: 'B7.21'
+    level: 3
+    parent_code: None
+  N0034:
+    name: 'B7.29'
+    level: 3
+    parent_code: None
+  N0035:
+    name: 'B8'
+    level: 2
+    parent_code: None
+  N0036:
+    name: 'B9'
+    level: 2
+    parent_code: None
+  N0037:
+    name: 'B9.1'
+    level: 3
+    parent_code: None
+  N0038:
+    name: 'B9.2'
+    level: 3
+    parent_code: None
+  N0039:
+    name: 'C'
+    level: 1
+    parent_code: None
+  N0040:
+    name: 'C10'
+    level: 2
+    parent_code: None
+  N0041:
+    name: 'C10.1'
+    level: 3
+    parent_code: None
+  N0042:
+    name: 'C10.2'
+    level: 3
+    parent_code: None
+  N0043:
+    name: 'C10.3'
+    level: 3
+    parent_code: None
+  N0044:
+    name: 'C10.4'
+    level: 3
+    parent_code: None
+  N0045:
+    name: 'C10.5'
+    level: 3
+    parent_code: None
+  N0046:
+    name: 'C10.6'
+    level: 3
+    parent_code: None
+  N0047:
+    name: 'C10.7'
+    level: 3
+    parent_code: None
+  N0048:
+    name: 'C10.8'
+    level: 3
+    parent_code: None
+  N0049:
+    name: 'C10.9'
+    level: 3
+    parent_code: None
+  N0050:
+    name: 'C11'
+    level: 2
+    parent_code: None
+  N0051:
+    name: 'C12'
+    level: 2
+    parent_code: None
+  N0052:
+    name: 'C13'
+    level: 2
+    parent_code: None
+  N0053:
+    name: 'C14'
+    level: 2
+    parent_code: None
+  N0054:
+    name: 'C15'
+    level: 2
+    parent_code: None
+  N0055:
+    name: 'C15.1'
+    level: 3
+    parent_code: None
+  N0056:
+    name: 'C15.2'
+    level: 3
+    parent_code: None
+  N0057:
+    name: 'C16'
+    level: 2
+    parent_code: None
+  N0058:
+    name: 'C17'
+    level: 2
+    parent_code: None
+  N0059:
+    name: 'C18'
+    level: 2
+    parent_code: None
+  N0060:
+    name: 'C18.1'
+    level: 3
+    parent_code: None
+  N0061:
+    name: 'C18.2'
+    level: 3
+    parent_code: None
+  N0062:
+    name: 'C19'
+    level: 2
+    parent_code: None
+  N0063:
+    name: 'C20'
+    level: 2
+    parent_code: None
+  N0064:
+    name: 'C21'
+    level: 2
+    parent_code: None
+  N0065:
+    name: 'C22'
+    level: 2
+    parent_code: None
+  N0066:
+    name: 'C23'
+    level: 2
+    parent_code: None
+  N0067:
+    name: 'C24'
+    level: 2
+    parent_code: None
+  N0068:
+    name: 'C24.1'
+    level: 3
+    parent_code: None
+  N0069:
+    name: 'C24.4'
+    level: 3
+    parent_code: None
+  N0070:
+    name: 'C24.42'
+    level: 3
+    parent_code: None
+  N0071:
+    name: 'C24.41'
+    level: 3
+    parent_code: None
+  N0072:
+    name: 'C24.43'
+    level: 3
+    parent_code: None
+  N0073:
+    name: 'C24.44'
+    level: 3
+    parent_code: None
+  N0074:
+    name: 'C24.45'
+    level: 3
+    parent_code: None
+  N0075:
+    name: 'C24.5'
+    level: 3
+    parent_code: None
+  N0076:
+    name: 'C24.2'
+    level: 3
+    parent_code: None
+  N0077:
+    name: 'C24.3'
+    level: 3
+    parent_code: None
+  N0078:
+    name: 'C25'
+    level: 2
+    parent_code: None
+  N0079:
+    name: 'C25.1'
+    level: 3
+    parent_code: None
+  N0080:
+    name: 'C25.2'
+    level: 3
+    parent_code: None
+  N0081:
+    name: 'C25.3'
+    level: 3
+    parent_code: None
+  N0082:
+    name: 'C25.4'
+    level: 3
+    parent_code: None
+  N0083:
+    name: 'C25.5&C25.6'
+    level: 3
+    parent_code: None
+  N0084:
+    name: 'C25.7&C25.9'
+    level: 3
+    parent_code: None
+  N0085:
+    name: 'C26'
+    level: 2
+    parent_code: None
+  N0086:
+    name: 'C26.3'
+    level: 3
+    parent_code: None
+  N0087:
+    name: 'C26.5'
+    level: 3
+    parent_code: None
+  N0088:
+    name: 'C26.7'
+    level: 3
+    parent_code: None
+  N0089:
+    name: 'C26.1&C26.2&C26.4&C26.6&C26.8'
+    level: 3
+    parent_code: None
+  N0090:
+    name: 'C27'
+    level: 2
+    parent_code: None
+  N0091:
+    name: 'C27.5'
+    level: 3
+    parent_code: None
+  N0092:
+    name: 'C27.1'
+    level: 3
+    parent_code: None
+  N0093:
+    name: 'C27.2'
+    level: 3
+    parent_code: None
+  N0094:
+    name: 'C27.3'
+    level: 3
+    parent_code: None
+  N0095:
+    name: 'C27.4'
+    level: 3
+    parent_code: None
+  N0096:
+    name: 'C27.9'
+    level: 3
+    parent_code: None
+  N0097:
+    name: 'C28'
+    level: 2
+    parent_code: None
+  N0098:
+    name: 'C28.1'
+    level: 3
+    parent_code: None
+  N0099:
+    name: 'C28.23'
+    level: 3
+    parent_code: None
+  N0100:
+    name: 'C28.29'
+    level: 3
+    parent_code: None
+  N0101:
+    name: 'C28.9'
+    level: 3
+    parent_code: None
+  N0102:
+    name: 'C28.4'
+    level: 3
+    parent_code: None
+  N0103:
+    name: 'C28.99'
+    level: 3
+    parent_code: None
+  N0104:
+    name: 'C29'
+    level: 2
+    parent_code: None
+  N0105:
+    name: 'C30'
+    level: 2
+    parent_code: None
+  N0106:
+    name: 'C30.1'
+    level: 3
+    parent_code: None
+  N0107:
+    name: 'C30.2'
+    level: 3
+    parent_code: None
+  N0108:
+    name: 'C30.3'
+    level: 3
+    parent_code: None
+  N0109:
+    name: 'C30.4'
+    level: 3
+    parent_code: None
+  N0110:
+    name: 'C30.9'
+    level: 3
+    parent_code: None
+  N0111:
+    name: 'C31'
+    level: 2
+    parent_code: None
+  N0112:
+    name: 'C32'
+    level: 2
+    parent_code: None
+  N0113:
+    name: 'C32.5'
+    level: 3
+    parent_code: None
+  N0114:
+    name: 'C32.1'
+    level: 3
+    parent_code: None
+  N0115:
+    name: 'C32.2'
+    level: 3
+    parent_code: None
+  N0116:
+    name: 'C32.4'
+    level: 3
+    parent_code: None
+  N0117:
+    name: 'C32.99'
+    level: 3
+    parent_code: None
+  N0118:
+    name: 'C33'
+    level: 2
+    parent_code: None
+  N0119:
+    name: 'D35.11'
+    level: 3
+    parent_code: None
+  N0120:
+    name: 'D'
+    level: 1
+    parent_code: None
+  N0121:
+    name: 'D35.12&D35.13&D35.14'
+    level: 3
+    parent_code: None
+  N0122:
+    name: 'D35.2'
+    level: 3
+    parent_code: None
+  N0123:
+    name: 'D35.3'
+    level: 3
+    parent_code: None
+  N0124:
+    name: 'E'
+    level: 1
+    parent_code: None
+  N0125:
+    name: 'E36'
+    level: 2
+    parent_code: None
+  N0126:
+    name: 'E37'
+    level: 2
+    parent_code: None
+  N0127:
+    name: 'E38'
+    level: 2
+    parent_code: None
+  N0128:
+    name: 'E38.1'
+    level: 3
+    parent_code: None
+  N0129:
+    name: 'E38.2'
+    level: 3
+    parent_code: None
+  N0130:
+    name: 'E38.3'
+    level: 3
+    parent_code: None
+  N0131:
+    name: 'E39'
+    level: 2
+    parent_code: None
+  N0132:
+    name: 'F'
+    level: 1
+    parent_code: None
+  N0133:
+    name: 'F41'
+    level: 2
+    parent_code: None
+  N0134:
+    name: 'F41.1'
+    level: 3
+    parent_code: None
+  N0135:
+    name: 'F41.2'
+    level: 3
+    parent_code: None
+  N0136:
+    name: 'F41.2'
+    level: 3
+    parent_code: None
+  N0137:
+    name: 'F42'
+    level: 2
+    parent_code: None
+  N0138:
+    name: 'F42.1'
+    level: 3
+    parent_code: None
+  N0139:
+    name: 'F42.2'
+    level: 3
+    parent_code: None
+  N0140:
+    name: 'F42.9'
+    level: 3
+    parent_code: None
+  N0141:
+    name: 'F43'
+    level: 2
+    parent_code: None
+  N0142:
+    name: 'F43.1'
+    level: 3
+    parent_code: None
+  N0143:
+    name: 'F43.2'
+    level: 3
+    parent_code: None
+  N0144:
+    name: 'F43.3'
+    level: 3
+    parent_code: None
+  N0145:
+    name: 'F43.9'
+    level: 3
+    parent_code: None
+  N0146:
+    name: 'G'
+    level: 1
+    parent_code: None
+  N0147:
+    name: 'G45'
+    level: 2
+    parent_code: None
+  N0148:
+    name: 'G45.1&G45.3&G45.4'
+    level: 3
+    parent_code: None
+  N0149:
+    name: 'G45.2&G45.4'
+    level: 3
+    parent_code: None
+  N0150:
+    name: 'G46'
+    level: 2
+    parent_code: None
+  N0151:
+    name: 'G46.2'
+    level: 3
+    parent_code: None
+  N0152:
+    name: 'G46.3'
+    level: 3
+    parent_code: None
+  N0153:
+    name: 'G46.4'
+    level: 3
+    parent_code: None
+  N0154:
+    name: 'G46.41&G46.16'
+    level: 3
+    parent_code: None
+  N0155:
+    name: 'G46.42&G46.43&G46.52'
+    level: 3
+    parent_code: None
+  N0156:
+    name: 'G46.1&G46.4&G46.5&G46.6'
+    level: 3
+    parent_code: None
+  N0157:
+    name: 'G46.6'
+    level: 3
+    parent_code: None
+  N0158:
+    name: 'G46.6&G46.7'
+    level: 3
+    parent_code: None
+  N0159:
+    name: 'G46.1&G46.7&G46.9'
+    level: 3
+    parent_code: None
+  N0160:
+    name: 'G47'
+    level: 2
+    parent_code: None
+  N0161:
+    name: 'G47.1'
+    level: 3
+    parent_code: None
+  N0162:
+    name: 'G47.11'
+    level: 3
+    parent_code: None
+  N0163:
+    name: 'G47.19'
+    level: 3
+    parent_code: None
+  N0164:
+    name: 'G47.2'
+    level: 3
+    parent_code: None
+  N0165:
+    name: 'G47.8&G47.9'
+    level: 3
+    parent_code: None
+  N0166:
+    name: 'G47.3&G47.4&G47.5&G47.6&G47.7'
+    level: 3
+    parent_code: None
+  N0167:
+    name: 'H'
+    level: 1
+    parent_code: None
+  N0168:
+    name: 'H49'
+    level: 2
+    parent_code: None
+  N0169:
+    name: 'H49.1 & H49.2'
+    level: 3
+    parent_code: None
+  N0170:
+    name: 'H49.1'
+    level: 3
+    parent_code: None
+  N0171:
+    name: 'H49.2'
+    level: 3
+    parent_code: None
+  N0172:
+    name: 'H49.3'
+    level: 3
+    parent_code: None
+  N0173:
+    name: 'H49.31'
+    level: 3
+    parent_code: None
+  N0174:
+    name: 'H49.32&H49.41&H49.42'
+    level: 3
+    parent_code: None
+  N0175:
+    name: 'H49.39'
+    level: 3
+    parent_code: None
+  N0176:
+    name: 'H49.5'
+    level: 3
+    parent_code: None
+  N0177:
+    name: 'H50'
+    level: 2
+    parent_code: None
+  N0178:
+    name: 'H50.1 & H50.2'
+    level: 3
+    parent_code: None
+  N0179:
+    name: 'H50.3 & H50.4'
+    level: 3
+    parent_code: None
+  N0180:
+    name: 'H51'
+    level: 2
+    parent_code: None
+  N0181:
+    name: 'H52'
+    level: 2
+    parent_code: None
+  N0182:
+    name: 'H52.1'
+    level: 3
+    parent_code: None
+  N0183:
+    name: 'H52.2'
+    level: 3
+    parent_code: None
+  N0184:
+    name: 'H53'
+    level: 2
+    parent_code: None
+  N0185:
+    name: 'I'
+    level: 1
+    parent_code: None
+  N0186:
+    name: 'I55'
+    level: 2
+    parent_code: None
+  N0187:
+    name: 'I55.1 & I55.2'
+    level: 3
+    parent_code: None
+  N0188:
+    name: 'I55.3'
+    level: 3
+    parent_code: None
+  N0189:
+    name: 'I55.9'
+    level: 3
+    parent_code: None
+  N0190:
+    name: 'I56'
+    level: 2
+    parent_code: None
+  N0191:
+    name: 'J'
+    level: 1
+    parent_code: None
+  N0192:
+    name: 'J58'
+    level: 2
+    parent_code: None
+  N0193:
+    name: 'J58.1'
+    level: 3
+    parent_code: None
+  N0194:
+    name: 'J58.2'
+    level: 3
+    parent_code: None
+  N0195:
+    name: 'J59'
+    level: 2
+    parent_code: None
+  N0196:
+    name: 'J60'
+    level: 2
+    parent_code: None
+  N0197:
+    name: 'J61'
+    level: 2
+    parent_code: None
+  N0198:
+    name: 'J62'
+    level: 2
+    parent_code: None
+  N0199:
+    name: 'J63'
+    level: 2
+    parent_code: None
+  N0200:
+    name: 'K'
+    level: 1
+    parent_code: None
+  N0201:
+    name: 'K64'
+    level: 2
+    parent_code: None
+  N0202:
+    name: 'K64.1'
+    level: 3
+    parent_code: None
+  N0203:
+    name: 'K64.11'
+    level: 3
+    parent_code: None
+  N0204:
+    name: 'K64.19'
+    level: 3
+    parent_code: None
+  N0205:
+    name: 'K64.2&K64.3&K64.9'
+    level: 3
+    parent_code: None
+  N0206:
+    name: 'K65'
+    level: 2
+    parent_code: None
+  N0207:
+    name: 'K65.1&K65.2&K66.2'
+    level: 3
+    parent_code: None
+  N0208:
+    name: 'K65.3&K84.3'
+    level: 3
+    parent_code: None
+  N0209:
+    name: 'K66'
+    level: 2
+    parent_code: None
+  N0210:
+    name: 'K66.1'
+    level: 3
+    parent_code: None
+  N0211:
+    name: 'K66.11&K66.19'
+    level: 3
+    parent_code: None
+  N0212:
+    name: 'K66.12&K66.3'
+    level: 3
+    parent_code: None
+  N0213:
+    name: 'L'
+    level: 1
+    parent_code: None
+  N0214:
+    name: 'L68.1 & L68.2'
+    level: 3
+    parent_code: None
+  N0215:
+    name: 'L68.3'
+    level: 3
+    parent_code: None
+  N0216:
+    name: 'L68.31'
+    level: 3
+    parent_code: None
+  N0217:
+    name: 'L68.32'
+    level: 3
+    parent_code: None
+  N0218:
+    name: 'M'
+    level: 1
+    parent_code: None
+  N0219:
+    name: 'M69'
+    level: 2
+    parent_code: None
+  N0220:
+    name: 'M69.1'
+    level: 3
+    parent_code: None
+  N0221:
+    name: 'M69.2'
+    level: 3
+    parent_code: None
+  N0222:
+    name: 'M70'
+    level: 2
+    parent_code: None
+  N0223:
+    name: 'M70.1'
+    level: 3
+    parent_code: None
+  N0224:
+    name: 'M70.2&M73.2'
+    level: 3
+    parent_code: None
+  N0225:
+    name: 'M71'
+    level: 2
+    parent_code: None
+  N0226:
+    name: 'M71.1'
+    level: 3
+    parent_code: None
+  N0227:
+    name: 'M71.2'
+    level: 3
+    parent_code: None
+  N0228:
+    name: 'M72'
+    level: 2
+    parent_code: None
+  N0229:
+    name: 'M73'
+    level: 2
+    parent_code: None
+  N0230:
+    name: 'M74'
+    level: 2
+    parent_code: None
+  N0231:
+    name: 'M75'
+    level: 2
+    parent_code: None
+  N0232:
+    name: 'N'
+    level: 1
+    parent_code: None
+  N0233:
+    name: 'N77'
+    level: 2
+    parent_code: None
+  N0234:
+    name: 'N77.1&N77.3'
+    level: 3
+    parent_code: None
+  N0235:
+    name: 'N77.2'
+    level: 3
+    parent_code: None
+  N0236:
+    name: 'N78'
+    level: 2
+    parent_code: None
+  N0237:
+    name: 'N79'
+    level: 2
+    parent_code: None
+  N0238:
+    name: 'N80'
+    level: 2
+    parent_code: None
+  N0239:
+    name: 'N81'
+    level: 2
+    parent_code: None
+  N0240:
+    name: 'N82'
+    level: 2
+    parent_code: None
+  N0241:
+    name: 'N82.1&N82.2&N82.9'
+    level: 3
+    parent_code: None
+  N0242:
+    name: 'N82.3'
+    level: 3
+    parent_code: None
+  N0243:
+    name: 'O'
+    level: 1
+    parent_code: None
+  N0244:
+    name: 'O84.1'
+    level: 3
+    parent_code: None
+  N0245:
+    name: 'O84.2'
+    level: 3
+    parent_code: None
+  N0246:
+    name: 'P'
+    level: 1
+    parent_code: None
+  N0247:
+    name: 'P85.1'
+    level: 3
+    parent_code: None
+  N0248:
+    name: 'P85.2&P85.3'
+    level: 3
+    parent_code: None
+  N0249:
+    name: 'P85.4'
+    level: 3
+    parent_code: None
+  N0250:
+    name: 'P85.5'
+    level: 3
+    parent_code: None
+  N0251:
+    name: 'P85.6'
+    level: 3
+    parent_code: None
+  N0252:
+    name: 'Q'
+    level: 1
+    parent_code: None
+  N0253:
+    name: 'Q86'
+    level: 2
+    parent_code: None
+  N0254:
+    name: 'Q86.1'
+    level: 3
+    parent_code: None
+  N0255:
+    name: 'Q86.2'
+    level: 3
+    parent_code: None
+  N0256:
+    name: 'Q86.9'
+    level: 3
+    parent_code: None
+  N0257:
+    name: 'Q87'
+    level: 2
+    parent_code: None
+  N0258:
+    name: 'Q88'
+    level: 2
+    parent_code: None
+  N0259:
+    name: 'R'
+    level: 1
+    parent_code: None
+  N0260:
+    name: 'R90'
+    level: 2
+    parent_code: None
+  N0261:
+    name: 'R91'
+    level: 2
+    parent_code: None
+  N0262:
+    name: 'R92'
+    level: 2
+    parent_code: None
+  N0263:
+    name: 'R93'
+    level: 2
+    parent_code: None
+  N0264:
+    name: 'S'
+    level: 1
+    parent_code: None
+  N0265:
+    name: 'S94'
+    level: 2
+    parent_code: None
+  N0266:
+    name: 'S95'
+    level: 2
+    parent_code: None
+  N0267:
+    name: 'S96'
+    level: 2
+    parent_code: None
+  N0268:
+    name: 'S96.0'
+    level: 3
+    parent_code: None
+  N0269:
+    name: 'S96.09'
+    level: 3
+    parent_code: None
+  N0270:
+    name: 'T'
+    level: 1
+    parent_code: None
+  N0271:
+    name: 'U'
+    level: 1
+    parent_code: None

@@ -1,0 +1,90 @@
+name: "ETL Pipeline → Cloudflare D1"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Triggers
+# ─────────────────────────────────────────────────────────────────────────────
+on:
+  push:
+    branches: [main]
+    paths:
+      - "submissions/**.xlsx"   # Only runs when an Excel file is added/changed
+  workflow_dispatch:            # Also allows manual trigger from GitHub UI
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Job
+# ─────────────────────────────────────────────────────────────────────────────
+jobs:
+  pipeline:
+    name: "Run ETL Pipeline & Seed D1"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # 1. Check out the repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Python
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # 3. Install Python dependencies
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Run the batch pipeline (processes ALL .xlsx in submissions/)
+      - name: Run ETL pipeline
+        run: python batch_run.py --input-folder submissions/ --output-db data/dashboard.db --config-dir config
+
+      # 5. Export SQLite → D1 SQL seed file
+      - name: Export to D1 SQL
+        run: python export_d1.py --db data/dashboard.db --output data/seed_d1.sql
+
+      # 6. Show stats (helpful for debugging in the Actions log)
+      - name: Show export stats
+        run: |
+          echo "=== database size ==="
+          du -sh data/dashboard.db
+          echo "=== seed file size ==="
+          du -sh data/seed_d1.sql
+          echo "=== row counts ==="
+          sqlite3 data/dashboard.db "
+            SELECT 'indicators'    , COUNT(*) FROM indicators;
+            SELECT 'country_data'  , COUNT(*) FROM country_data;
+            SELECT 'submissions'   , COUNT(*) FROM submissions_log;
+          "
+
+      # 7. Set up Node.js for Wrangler
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # 8. Install Wrangler CLI
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      # 9. Seed Cloudflare D1
+      #    Requires two GitHub Secrets:
+      #      CLOUDFLARE_API_TOKEN   — a Cloudflare API token with D1 edit permission
+      #      CLOUDFLARE_ACCOUNT_ID  — your Cloudflare account ID
+      - name: Seed Cloudflare D1
+        run: wrangler d1 execute climate_dashboard --file=data/seed_d1.sql --remote
+        env:
+          CLOUDFLARE_API_TOKEN:  ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      # 10. Upload the SQLite DB as a workflow artifact (useful for debugging)
+      - name: Upload database artifact
+        uses: actions/upload-artifact@v4
+        if: always()   # upload even if a step fails
+        with:
+          name: dashboard-db-${{ github.run_number }}
+          path: |
+            data/dashboard.db
+            data/seed_d1.sql
+            logs/pipeline.log
+          retention-days: 14

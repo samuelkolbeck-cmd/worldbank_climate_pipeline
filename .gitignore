@@ -1,0 +1,26 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database (generated — not committed)
+data/*.db
+
+# D1 seed SQL (generated — not committed)
+data/seed_d1.sql
+
+# Logs (generated)
+logs/
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.local
+*.env
+
+# Editor
+.vscode/
+.idea/
+*.swp
