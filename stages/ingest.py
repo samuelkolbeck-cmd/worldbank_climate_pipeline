@@ -137,13 +137,14 @@ class FinSACIngestor:
         if ws is None:
             return None
         try:
-            country_code      = ws.cell(5, 2).value
-            round_id          = ws.cell(6, 2).value
-            data_as_of_year   = ws.cell(7, 2).value
-            submission_date_v = ws.cell(8, 2).value
-            analyst_name      = ws.cell(9, 2).value
-            analyst_email     = ws.cell(10, 2).value
-            notes             = ws.cell(11, 2).value
+            # Labels are in col B (index 2), values are in col C (index 3)
+            country_code      = ws.cell(5, 3).value
+            round_id          = ws.cell(6, 3).value
+            data_as_of_year   = ws.cell(7, 3).value
+            submission_date_v = ws.cell(8, 3).value
+            analyst_name      = ws.cell(9, 3).value
+            analyst_email     = ws.cell(10, 3).value
+            notes             = ws.cell(11, 3).value
 
             if isinstance(submission_date_v, str):
                 submission_date = datetime.strptime(submission_date_v, '%Y-%m-%d')
@@ -178,8 +179,12 @@ class FinSACIngestor:
             return []
         rows = []
         for row_idx, row in enumerate(ws.iter_rows(min_row=2, values_only=True), 2):
+            # Template cols: round_id, country_code, year, indicator_id,
+            # value, unit, currency, fx_rate_to_eur, fx_rate_date, source,
+            # is_estimated, is_forecast, reported_level, notes  (14 total)
+            r = (row + (None,) * 14)  # pad so slicing is always safe
             _, country_code, year, indicator_id, value, unit, \
-                currency, fx_rate, fx_date, source, is_estimated = (row + (None,) * 11)[:11]
+                currency, fx_rate, fx_date, source, is_estimated = r[:11]
             if not indicator_id or year is None:
                 continue
             try:
@@ -209,8 +214,12 @@ class FinSACIngestor:
             return []
         rows = []
         for row_idx, row in enumerate(ws.iter_rows(min_row=2, values_only=True), 2):
+            # Template cols: round_id, country_code, year, indicator_id,
+            # region_id, value, unit, currency, fx_rate_to_eur, fx_rate_date,
+            # source, is_estimated, is_forecast, reported_level, notes  (15 total)
+            r = (row + (None,) * 15)
             _, country_code, year, indicator_id, region_id, value, unit, \
-                currency, fx_rate, fx_date, source, is_estimated = (row + (None,) * 12)[:12]
+                currency, fx_rate, fx_date, source, is_estimated = r[:12]
             if not indicator_id or year is None or not region_id:
                 continue
             try:
@@ -241,8 +250,12 @@ class FinSACIngestor:
             return []
         rows = []
         for row_idx, row in enumerate(ws.iter_rows(min_row=2, values_only=True), 2):
+            # Template cols: round_id, country_code, year, indicator_id,
+            # nace_node_id, value, unit, currency, fx_rate_to_eur, fx_rate_date,
+            # source, is_estimated, is_forecast, reported_level, notes  (15 total)
+            r = (row + (None,) * 15)
             _, country_code, year, indicator_id, nace_node_id, value, unit, \
-                currency, fx_rate, fx_date, source, is_estimated = (row + (None,) * 12)[:12]
+                currency, fx_rate, fx_date, source, is_estimated = r[:12]
             if not indicator_id or year is None or not nace_node_id:
                 continue
             try:
