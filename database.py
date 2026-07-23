@@ -37,7 +37,7 @@ class Database:
 
             CREATE TABLE IF NOT EXISTS country_data (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                country_code TEXT NOT NULL,
+                country_iso3 TEXT NOT NULL,
                 indicator_id TEXT NOT NULL,
                 year INTEGER NOT NULL,
                 value REAL NOT NULL,
@@ -59,12 +59,12 @@ class Database:
                 financial_vulnerability REAL,
                 ccr_score REAL,
                 ranking_position INTEGER,
-                UNIQUE(country_code, indicator_id, year, round_id, region_id, nace_node_id)
+                UNIQUE(country_iso3, indicator_id, year, round_id, region_id, nace_node_id)
             );
 
             CREATE TABLE IF NOT EXISTS submissions_log (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                country_code TEXT NOT NULL,
+                country_iso3 TEXT NOT NULL,
                 analyst_name TEXT,
                 submission_date DATETIME NOT NULL,
                 round_id TEXT NOT NULL,
@@ -77,7 +77,7 @@ class Database:
                 notes TEXT
             );
 
-            CREATE INDEX IF NOT EXISTS idx_cd_country ON country_data(country_code);
+            CREATE INDEX IF NOT EXISTS idx_cd_country ON country_data(country_iso3);
             CREATE INDEX IF NOT EXISTS idx_cd_year ON country_data(year);
             CREATE INDEX IF NOT EXISTS idx_cd_indicator ON country_data(indicator_id);
             CREATE INDEX IF NOT EXISTS idx_cd_region ON country_data(region_id);
@@ -115,10 +115,10 @@ class Database:
     # ------------------------------------------------------------------
 
     def insert_country_data(self, row: dict):
-        """Insert a processed data row (ignore duplicates)."""
+        """Insert country data row."""
         self.conn.execute("""
             INSERT OR IGNORE INTO country_data
-            (country_code, indicator_id, year, value, unit, source,
+            (country_iso3, indicator_id, year, value, unit, source,
              is_estimated, submission_date, round_id,
              region_id, nace_node_id,
              currency, fx_rate_to_eur, fx_rate_date,
@@ -126,7 +126,7 @@ class Database:
              ccr_score, ranking_position)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
-            row['country_code'],
+            row['country_iso3'],
             row['indicator_id'],
             row['year'],
             row['value'],
@@ -153,7 +153,7 @@ class Database:
         """Return the latest round_id string for a record, or empty string."""
         cursor = self.conn.execute("""
             SELECT round_id FROM country_data
-            WHERE country_code = ?
+            WHERE country_iso3 = ?
               AND indicator_id = ?
               AND year = ?
               AND (region_id IS ? OR region_id = ?)
@@ -174,12 +174,12 @@ class Database:
         """Write a submission audit entry."""
         self.conn.execute("""
             INSERT INTO submissions_log
-            (country_code, analyst_name, submission_date, round_id,
+            (country_iso3, analyst_name, submission_date, round_id,
              national_records, regional_records, sectoral_records,
              validation_status, error_count, warning_count, notes)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
-            log['country_code'],
+            log['country_iso3'],
             log.get('analyst_name'),
             log['submission_date'],
             log['round_id'],

@@ -48,7 +48,7 @@ def export(db_path: str, output_path: str):
 
     # ── country_data ─────────────────────────────────────────────────────
     rows = conn.execute(
-        "SELECT * FROM country_data ORDER BY country_code, year, indicator_id"
+        "SELECT * FROM country_data ORDER BY country_iso3, year, indicator_id"
     ).fetchall()
 
     if rows:
@@ -61,7 +61,7 @@ def export(db_path: str, output_path: str):
             values_list = []
             for r in chunk:
                 values_list.append(
-                    f"({_q(r['country_code'])}, {_q(r['indicator_id'])}, "
+                    f"({_q(r['country_iso3'])}, {_q(r['indicator_id'])}, "
                     f"{r['year']}, {_n(r['value'])}, "
                     f"{_q(r['unit'])}, {_q(r['source'])}, "
                     f"{r['is_estimated'] or 0}, "
@@ -75,7 +75,7 @@ def export(db_path: str, output_path: str):
                 )
             lines.append(
                 "INSERT INTO country_data "
-                "(country_code, indicator_id, year, value, unit, source, "
+                "(country_iso3, indicator_id, year, value, unit, source, "
                 "is_estimated, submission_date, round_id, "
                 "region_id, nace_node_id, "
                 "currency, fx_rate_to_eur, fx_rate_date, "
@@ -96,10 +96,10 @@ def export(db_path: str, output_path: str):
         for r in rows:
             lines.append(
                 "INSERT INTO submissions_log "
-                "(country_code, analyst_name, submission_date, round_id, "
+                "(country_iso3, analyst_name, submission_date, round_id, "
                 "national_records, regional_records, sectoral_records, "
                 "validation_status, error_count, warning_count, notes) VALUES "
-                f"({_q(r['country_code'])}, {_q(r['analyst_name'])}, "
+                f"({_q(r['country_iso3'])}, {_q(r['analyst_name'])}, "
                 f"{_q(r['submission_date'])}, {_q(r['round_id'])}, "
                 f"{r['national_records'] or 0}, {r['regional_records'] or 0}, "
                 f"{r['sectoral_records'] or 0}, "

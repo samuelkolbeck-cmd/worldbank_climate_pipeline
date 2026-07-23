@@ -37,7 +37,7 @@ def load(
     """
     for row in processed_rows:
         db.insert_country_data({
-            'country_code':           row.country_code,
+            'country_iso3':           row.country_code,
             'indicator_id':           row.indicator_id,
             'year':                   row.year,
             'value':                  row.value,
@@ -60,7 +60,7 @@ def load(
 
     meta = submission.metadata
     db.log_submission({
-        'country_code':      meta.country_code,
+        'country_iso3':      meta.country_code,
         'analyst_name':      meta.analyst_name,
         'submission_date':   meta.submission_date.isoformat(),
         'round_id':          meta.round_id,

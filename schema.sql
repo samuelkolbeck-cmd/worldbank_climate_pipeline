@@ -20,7 +20,7 @@ CREATE TABLE indicators (
 
 CREATE TABLE country_data (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    country_code TEXT NOT NULL,
+    country_iso3 TEXT NOT NULL,
     indicator_id TEXT NOT NULL,
     year INTEGER NOT NULL,
     value REAL NOT NULL,
@@ -40,12 +40,12 @@ CREATE TABLE country_data (
     ccr_score REAL,
     ranking_position INTEGER,
     FOREIGN KEY (indicator_id) REFERENCES indicators(id),
-    UNIQUE(country_code, indicator_id, year, round_id, region_id, nace_node_id)
+    UNIQUE(country_iso3, indicator_id, year, round_id, region_id, nace_node_id)
 );
 
 CREATE TABLE submissions_log (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    country_code TEXT NOT NULL,
+    country_iso3 TEXT NOT NULL,
     analyst_name TEXT,
     submission_date DATETIME NOT NULL,
     round_id TEXT NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE submissions_log (
     notes TEXT
 );
 
-CREATE INDEX idx_cd_country ON country_data(country_code);
+CREATE INDEX idx_cd_country ON country_data(country_iso3);
 CREATE INDEX idx_cd_year ON country_data(year);
 CREATE INDEX idx_cd_indicator ON country_data(indicator_id);
 CREATE INDEX idx_cd_region ON country_data(region_id);
